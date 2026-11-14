@@ -1,0 +1,10 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  background: oklch(91.48% 0.014 135);
+  color: oklch(33.1% 0.015 153);
+}
+body { margin: 0; }
+main { box-sizing: border-box; width: min(100%, 1170px); margin-inline: auto; padding: 2rem clamp(1rem, 4vw, 2.5rem) 4rem; }
+h1 { margin: 0; font-size: 2.25rem; letter-spacing: -.045em; }
+main > p { margin: .5rem 0 1.5rem; line-height: 1.5; }

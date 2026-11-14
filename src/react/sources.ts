@@ -1,0 +1,18 @@
+export const SOURCES = [
+  { topic: "Heat, oxidants, and protein refolding", title: "Adachi et al. on oxidative stress and heat recovery", url: "https://pubmed.ncbi.nlm.nih.gov/19936221/" },
+  { topic: "Chaperone binding during heat stress", title: "ATP-dependent HSP70 binding in cells", url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0222990" },
+  { topic: "UV lesions and excision repair", title: "Hu et al. on human UV damage and repair maps", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5495279/" },
+  { topic: "Oxidized DNA bases", title: "Klungland et al. on oxidative base excision repair", url: "https://pubmed.ncbi.nlm.nih.gov/10557315/" },
+  { topic: "Strand break repair and the cell cycle", title: "Rothkamm et al. on break-repair pathways", url: "https://pubmed.ncbi.nlm.nih.gov/12897142/" },
+  { topic: "Sustained ER stress and apoptosis", title: "Han et al. on the ER stress response", url: "https://pubmed.ncbi.nlm.nih.gov/23624402/" },
+  { topic: "Apoptotic cell morphology", title: "Kerr, Wyllie and Currie on apoptosis", url: "https://doi.org/10.1038/bjc.1972.33" },
+  { topic: "Mitochondrial cristae and membrane structure", title: "Perkins et al. on electron tomography of mitochondria", url: "https://pubmed.ncbi.nlm.nih.gov/9245766/" },
+  { topic: "Rough ER sheets and smooth tubules", title: "Puhka et al. on ER architecture in mammalian cells", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2099207/" },
+  { topic: "ATP depletion and cell death", title: "Leist et al. on ATP and cell-death morphology", url: "https://doi.org/10.1084/jem.185.8.1481" },
+  { topic: "Cysteine and glutathione", title: "Numazawa et al. on cysteine availability and oxidative stress", url: "https://pubmed.ncbi.nlm.nih.gov/18524943/" },
+  { topic: "Low oxygen and energy metabolism", title: "Kim et al. on cellular adaptation to hypoxia", url: "https://pubmed.ncbi.nlm.nih.gov/16517405/" },
+  { topic: "Replication stress", title: "Toledo et al. on ATR and replication fork protection", url: "https://pubmed.ncbi.nlm.nih.gov/24267891/" },
+  { topic: "Checkpoint dynamics and senescence", title: "Purvis et al. on p53 and cell fate", url: "https://pubmed.ncbi.nlm.nih.gov/22700930/" },
+  { topic: "Oncogenic signals and senescence", title: "Serrano et al. on oncogene-induced senescence", url: "https://pubmed.ncbi.nlm.nih.gov/9054499/" },
+  { topic: "Clonal expansion in skin", title: "Martincorena et al. on somatic mutations in human skin", url: "https://pubmed.ncbi.nlm.nih.gov/25999502/" },
+] as const;

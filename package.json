@@ -1,0 +1,47 @@
+{
+  "name": "@esmirnov.ai/cell-stress-lab",
+  "version": "0.1.0",
+  "description": "An interactive single-cell stress and recovery model with a headless TypeScript core.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Eduard Smirnov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduard-s/cell-stress-lab.git"
+  },
+  "publishConfig": { "access": "public" },
+  "sideEffects": ["**/*.css"],
+  "main": "./dist/react/index.js",
+  "types": "./dist/react/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/react/index.d.ts", "import": "./dist/react/index.js" },
+    "./core": { "types": "./dist/core/index.d.ts", "import": "./dist/core/index.js" },
+    "./styles.css": "./dist/react/styles.css",
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "LICENSE", "README.md"],
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4184",
+    "build": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\" && tsc -p tsconfig.build.json && cp src/react/styles.css dist/react/styles.css",
+    "build:demo": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0 <20"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true }
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "typescript": "^5.9.3",
+    "vite": "8.3.8"
+  },
+  "engines": { "node": ">=22.12" }
+}
