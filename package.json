@@ -1,6 +1,6 @@
 {
   "name": "@esmirnov.ai/cell-stress-lab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An interactive single-cell stress and recovery model with a headless TypeScript core.",
   "type": "module",
   "license": "MIT",
